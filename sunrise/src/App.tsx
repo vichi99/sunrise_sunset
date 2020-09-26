@@ -1,19 +1,19 @@
 import React from 'react';
-import './App.css';
 import { Route, Switch } from "react-router-dom";
 
+// styles
+import './App.scss';
+
 // views
-import Home from "./views/Home";
+import Sun from "./views/Sun";
 
 function App() {
   return (
     <div className="App">
 
-      <main className="content" >
-        <Switch>
-          <Route path="/" component={Home} exact />
-        </Switch>
-      </main>
+      <Switch>
+        <Route path="/" component={Sun} exact />
+      </Switch>
 
     </div>
   );
