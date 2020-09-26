@@ -1,6 +1,7 @@
 import React, { ChangeEvent } from 'react'
 import TextField from "@material-ui/core/TextField";
 import Autocomplete from "@material-ui/lab/Autocomplete";
+import { CountryType } from "../../views/Sun";
 
 // data
 import { countriesList } from "../../data/countries";
@@ -10,12 +11,7 @@ import "./SunCountryPick.scss"
 
 // props
 interface Props {
-    onCountrySelect: (lat: Number, lng: number) => void
-}
-
-interface CountryType {
-    name: string;
-    latlng: Array<number>;
+    onCountrySelect: (country: CountryType) => void
 }
 
 
@@ -27,7 +23,7 @@ const CountriesList = (props: Props) => {
 
     const handleSubmit = (e: ChangeEvent<{}>, value: CountryType | null) => {
         if (value) {
-            onCountrySelect(value.latlng[0], value.latlng[1]);
+            onCountrySelect(value);
         }
     }
 

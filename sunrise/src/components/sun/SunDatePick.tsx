@@ -12,15 +12,18 @@ import { minDate, maxDate, locale } from "../../confs/conf";
 // styles
 import "./SunDatePick.scss"
 
+// props
 interface Props {
     handleDateChange: (date: MaterialUiPickersDate) => void
     selectedDate: string
 }
 
 
-
+// component
 const SunDatePick = (props: Props) => {
     const { handleDateChange, selectedDate } = props
+
+    // template
     return (
         <div className="datePick">
             <MuiPickersUtilsProvider utils={MomentUtils} locale={locale}>
@@ -37,7 +40,7 @@ const SunDatePick = (props: Props) => {
                     KeyboardButtonProps={{
                         'aria-label': 'change date',
                     }}
-                    style={{ height: "100%" }}
+                    style={{ width: "100%" }}
                 />
             </MuiPickersUtilsProvider>
         </div>
