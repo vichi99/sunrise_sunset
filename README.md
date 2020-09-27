@@ -2,7 +2,7 @@
 
 Responsive App for view sunrise and sunset by selected date and Country.
 
-- Interval of date is stted on - from `2019-01-01` to `2020-06-20` (can be changed in config file)
+- Interval of date is setted on - from `2019-01-01` to `2020-06-20` (can be changed in config file)
 
 - For create this little app was used Docker, React, yarn and TypeScript.
 
@@ -21,4 +21,4 @@ For running develop application run this command:
 # Sources
 
 - Api for list of countries - [https://restcountries.eu/](https://restcountries.eu/)
-- Api for sunset and sunrise time - [https://sunrise-sunset.org/api](https://sunrise-sunset.org/api)
+- Api for sunrise and sunset time - [https://sunrise-sunset.org/api](https://sunrise-sunset.org/api)
