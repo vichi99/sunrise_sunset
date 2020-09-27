@@ -12,4 +12,3 @@ services:
       - /app/node_modules
     tty: true
     stdin_open: true
-    privileged: true
